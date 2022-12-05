@@ -2,6 +2,99 @@ let agenda = localStorage.getItem('agenda')
 agenda = JSON.parse(agenda);
 const itemSet = (localStorage.getItem('agenda') !== null);
 
+if (itemSet){
+    let agenda = {
+        profile:{
+            id: 1,
+            name: "Pedro Pedregulho Pedroso",
+            title: "Mestre Cuca",
+            status: "Trabalhando",
+            profilePic: "images/download.png"
+        },
+        chores: [
+            {
+                userID: 1,
+                id: 0,
+                ActivityName: "Academia",
+                hour: "09:00",
+                place: "Smart Fit",
+                isDone: false,
+                todo:[
+                    {
+                        id: 1,
+                        info: "aerobicos",
+                        isDone: false
+                    },  
+                    {
+                        id: 2,
+                        info: "legday",
+                        isDone: false
+                    },
+                    {
+                        id: 3,
+                        info: "esteira",
+                        isDone: false
+                    }
+                    ] 
+            
+            },
+            {
+                userID: 1,
+                id: 2,
+                ActivityName: "Trabalho",
+                hour: "10:30",
+                place: "empresa",
+                isDone: false,
+                todo:[
+                    {
+                        id: 1,
+                        info: "",
+                        isDone: false
+                    },  
+                    {
+                        id: 2,
+                        info: "",
+                        isDone: false
+                    },
+                    {
+                        id: 3,
+                        info: "",
+                        isDone: false
+                    }
+                    ] 
+            
+            },
+            {
+                userID: 1,
+                id: 2,
+                ActivityName: "Almoco",
+                hour: "12:30",
+                place: "Cantina da nana",
+                isDone: false,
+                todo:[
+                    {
+                        id: 1,
+                        info: "Encontrar com robinsson",
+                        isDone: false
+                    },  
+                    {
+                        id: 2,
+                        info: "",
+                        isDone: false
+                    },
+                    {
+                        id: 3,
+                        info: "",
+                        isDone: false
+                    }
+                    ] 
+            
+             }
+
+        ]
+    }
+}
+
 
 
 
